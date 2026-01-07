@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS alunos (
     nome VARCHAR(100) NOT NULL,
     turno VARCHAR(60) NOT NULL,
     ano_escolar VARCHAR(60),
-    media_escolar DECIMAL(10,2) NOT NULL
+    media_escolar DECIMAL(3,1) NOT NULL
 );
 
 -- Inserção de dados
@@ -23,12 +23,12 @@ INSERT INTO alunos (nome, turno, ano_escolar, media_escolar) VALUES
 ('Lucas Pereira', 'Tarde', '3º Ano', 6.8);
 
 -- Alunos com notas maior que 7.0
-SELECT id, nome, turno, ano_escolar, media_escolar
+SELECT *
 FROM alunos
 WHERE media_escolar > 7.0;
 
 -- Alunos com notas menor que 7.0
-SELECT id, nome, turno, ano_escolar, media_escolar
+SELECT *
 FROM alunos
 WHERE media_escolar < 7.0;
 
