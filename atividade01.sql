@@ -20,12 +20,12 @@ INSERT INTO funcionarios (nome, cargo, salario, data_admissao) VALUES
 ('Carlos Henrique', 'Administrador', 5000.00, '2021-11-01');
 
 -- Funcionários com salário maior que 2000
-SELECT id, nome, cargo, salario, data_admissao
+SELECT *
 FROM funcionarios
 WHERE salario > 2000;
 
 -- Funcionários com salário menor que 2000
-SELECT id, nome, cargo, salario, data_admissao
+SELECT *
 FROM funcionarios
 WHERE salario < 2000;
 
