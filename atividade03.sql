@@ -23,12 +23,12 @@ INSERT INTO alunos (nome, turno, ano_escolar, media_escolar) VALUES
 ('Lucas Pereira', 'Tarde', '3º Ano', 6.8);
 
 -- Alunos com notas maior que 7.0
-SELECT id, nome, turno, ano_escolar, media_escolar
+SELECT *
 FROM alunos
 WHERE media_escolar > 7.0;
 
 -- Alunos com notas menor que 7.0
-SELECT id, nome, turno, ano_escolar, media_escolar
+SELECT *
 FROM alunos
 WHERE media_escolar < 7.0;
 
