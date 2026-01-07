@@ -23,12 +23,12 @@ INSERT INTO produtos (nome, categoria, preco, estoque) VALUES
 ('Roteador TP-Link Archer C6', 'Redes', 299.90, 27);
 
 -- Produtos com valor maior que 500
-SELECT id, nome, preco, categoria, estoque
+SELECT *
 FROM produtos
 WHERE preco > 500;
 
 -- Produtos com valor menor que 500
-SELECT id, nome, preco, categoria, estoque
+SELECT *
 FROM produtos
 WHERE preco < 500;
 
